@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vue Js Course : The ninja</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ greeting() }}</h1>
+      <h2>{{ message }}</h2>
+
+      <!-- if you didn't have to to use @Click , use v-on:click -->
+      <!-- we use method to make code performance and clean to prevent bad smiles-->
+      <button @click="AddAge()">Add year</button>
+      <button @click="SubAge()">Sub year</button>
+      <label>Name : </label>
+      <p>{{ name }}</p>
+      <input type="text" v-model="name" />
+      <label>Age : </label>
+      <p>{{ age }}</p>
+      <input type="text" v-model="age" />
+      <a :href="website"> this is website copyright by DevO</a>
+      <br />
+      <input type="text" :value="email" />
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
