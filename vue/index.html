@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- First-->
     <div id="app">
-      <h1>{{ greeting() }}</h1>
       <h2>{{ message }}</h2>
 
       <!-- if you didn't have to to use @Click , use v-on:click -->
@@ -25,7 +25,27 @@
       <a :href="website"> this is website copyright by DevO</a>
       <br />
       <input type="text" :value="email" />
+      <br />
+      <ul>
+        <li v-for="Namelist in NameLists">{{ Namelist }}</li>
+      </ul>
+      <ul>
+        <li v-for="(Jobslist,key ) in JobsLists">
+          {{key}} . {{Jobslist.name}} ### {{Jobslist.salary}}
+        </li>
+      </ul>
+      <div v-for="Namelist in NameLists">{{ Namelist}}</div>
     </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////-->
+    <!-- Second Tests -->
+    <div id="FirstTest">
+      <greeting></greeting>
+    </div>
+    <div id="SecondTest">
+      <greeting></greeting>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////-->
+
     <script src="js/vue.js"></script>
     <script src="js/main.js"></script>
   </body>
