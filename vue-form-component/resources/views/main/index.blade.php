@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form-warpper
+    <form-wrapper
 
         group="update-form"
         v-cloak          >
@@ -10,7 +10,7 @@
         <div slot-scope="props">
             <fieldset class="fieldset">
             <legend>Personal details</legend>
-                <div class="cell small-12 medium-6">
+                <div class="cell sm-12 md-6">
 
                 <text-input
                             :group="props.group"
@@ -20,14 +20,33 @@
                             :focus="true"
                             placeholder="First Name"
                             autocomplete="given-name"
-                            current-value="Khammmmmmmmmmes"
-                        ></text-input>                </div>
+                            :validation="{
+                                'required': 'Please provide your first name',
+                                'min:2': 'Minimum length 2 chars.',
+                                'max:30': 'Maximum length 30 chars.',
+                            }"
+                ></text-input>
+                <text-input
+                            :group="props.group"
+                            name="last_name"
+                            v-model="props.fields.last_name"
+                            maxlength="30"
+                            :focus="true"
+                            placeholder="Last Name"
+                            autocomplete="given-name"
+                            :validation="{
+                                'required': 'Please provide your last name',
+                                'min:2': 'Minimum length 2 chars.',
+                                'max:30': 'Maximum length 30 chars.',
+                            }"
+                ></text-input>
+                               </div>
 
 
             </fieldset>
         </div>
 
-    </form-warpper>
+    </form-wrapper>
 
 
 
