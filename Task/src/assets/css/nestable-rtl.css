@@ -1,0 +1,18 @@
+.dd-list .dd-list {
+  padding-right: 30px;
+}
+
+.dd-item > button {
+  float: right;
+}
+@media only screen and (min-width: 700px) {
+  .dd {
+    float: right;
+  }
+  .dd + .dd {
+    margin-right: 2%;
+  }
+}
+.dd-handle{
+  text-align: right;
+}

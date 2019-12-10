@@ -1,0 +1,64 @@
+.tree-cont {
+  box-shadow: 1px 1px 3px 5px #ddd;
+  width: 30%;
+  height: 350px;
+  margin-right: 100px;
+  background-color: #f4f4f4;
+  overflow-y: scroll;
+}
+#Brand {
+  font-weight: bolder;
+  font-family: serif;
+}
+.tree-header {
+  text-align: right;
+  margin: 6px;
+}
+.search-box {
+  text-align: right;
+  width: 100%;
+}
+.clear-fix {
+  clear: both;
+}
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
