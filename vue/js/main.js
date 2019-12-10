@@ -37,16 +37,28 @@ var MainInstance = new Vue({
       { name: "Designer", salary: "400$" },
       { name: "ProjectManager", salary: "800$" }
     ],
-    methods: {
-      /*AddAge: function() {
+    username: null,
+    repos: null
+  },
+  methods: {
+    /*AddAge: function() {
       this.age++;
     },
     SubAge: function() {
       this.age--;
     }*/
-    },
-    computed: {}
-  }
+    getRepos: function() {
+      return axios
+        .get(`https://api.github.com/users/${this.username}/repos`)
+        .then(response => {
+          this.repos = response.data;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+  },
+  computed: {}
 });
 
 var TestInstance1 = new Vue({

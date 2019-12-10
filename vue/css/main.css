@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.links-urls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+.links-urls.link {
+    padding: 10px 20px;
+    display: block;
+    background-color: #eee;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #777;
+  }
+}

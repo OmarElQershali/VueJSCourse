@@ -14,7 +14,7 @@
 
       <!-- if you didn't have to to use @Click , use v-on:click -->
       <!-- we use method to make code performance and clean to prevent bad smiles-->
-      <button @click="AddAge()">Add year</button>
+      <!-- <button @click="AddAge()">Add year</button>
       <button @click="SubAge()">Sub year</button>
       <label>Name : </label>
       <p>{{ name }}</p>
@@ -35,17 +35,27 @@
         </li>
       </ul>
       <div v-for="Namelist in NameLists">{{ Namelist}}</div>
-    </div>
+    </div> -->
     <!-- //////////////////////////////////////////////////////////////////////////////-->
     <!-- Second Tests -->
-    <div id="FirstTest">
+    <!-- <div id="FirstTest">
       <greeting></greeting>
     </div>
     <div id="SecondTest">
       <greeting></greeting>
-    </div>
+    </div> -->
     <!-- //////////////////////////////////////////////////////////////////////////////-->
 
+
+      <div id="app">
+        <input type="text" v-model="username">
+        <button @click="getRepos">Get Repos</button>
+        <div v-for="repo in repos">
+          <h4>{{ repo.name }}</h4>
+          <p>{{ repo.description }}</p>
+        </div>
+
+      </div>
     <script src="js/vue.js"></script>
     <script src="js/main.js"></script>
   </body>
