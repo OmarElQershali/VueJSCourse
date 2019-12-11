@@ -15,24 +15,16 @@ export default {
         {
           label: "الاصول الثابتة",
           children: [
-            {label: "العقارات و المباني",},
+            { label: "العقارات و المباني" },
             { label: "المعدات " },
-             { label: " الاجهزة والاثاث",
-             children:[
-              { label: "تست"},
-             ]
-             
-             },
-             {  label: "الحواسيب"}
+            { label: " الاجهزة والاثاث", children: [{ label: "تست" }] },
+            { label: "الحواسيب" }
           ]
         },
         {
-           label: "الاصول المتداولة",
-           children:[
-               {  label: "مخزون البضاعة"},
-                 {  label: "البنوك"}
-           ]
-            }
+          label: "الاصول المتداولة",
+          children: [{ label: "مخزون البضاعة" }, { label: "البنوك" }]
+        }
       ]
     }
   }),
@@ -47,8 +39,7 @@ export default {
 };
 </script>
 <style >
-.app-tree{
+.app-tree {
   border-radius: 20px !important;
 }
-
 </style>
