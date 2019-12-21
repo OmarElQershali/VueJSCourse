@@ -28,3 +28,28 @@ Vue.component("pagination-links", PaginationLinks);
 Vue.component("select-filter", SelectFilter);
 Vue.component("text-filter", TextFilter);
 Vue.component("sorting-icon", SortingIcon);
+
+/*
+const Components = {
+    Layout,
+    Page,
+    PageHeader,
+    PageBody,
+    Portlet,
+    PortletHead,
+    PortletBody,
+    PortletFoot,
+    Table,
+    TableRow,
+    PaginationLinks,
+    SelectFilter,
+    TextFilter,
+    SortingIcon
+  };
+  
+  Object.keys(Components).forEach(name => {
+    Vue.component(name, Components[name]);
+  });
+  
+  export default Components;
+  */
