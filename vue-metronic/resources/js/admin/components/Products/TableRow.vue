@@ -8,7 +8,18 @@
     <td v-if="actions" class="kt-datatable__cell">
       <span style="overflow: visible; position: relative; width: 110px;">
         <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">
-          <i class="la la-edit"></i>
+          <button @click="deleteRow(index)">
+            <i class="la la-edit"></i>
+          </button>
+          <button>
+            <i class="la la-pencil"></i>
+          </button>
+          <button>
+            <i class="la la-wrench"></i>
+          </button>
+          <button>
+            <i class="la la-remove"></i>
+          </button>
         </a>
       </span>
     </td>
@@ -26,6 +37,14 @@ export default {
     },
     actions: {
       required: true
+    },
+    resources: {
+      required: true
+    }
+  },
+  methods: {
+    deleteRow(resource, index) {
+      this.resource.splice(index, 1);
     }
   }
 };
