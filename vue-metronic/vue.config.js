@@ -22,7 +22,7 @@ module.exports = {
     admin: {
       entry: "resources/js/admin/app.js",
       template: "resources/js/admin/views/admin/index.html",
-      filename: "admin.html",
+      filename: "index.html",
       assetsDir: "resources/js/admin/assets",
       publicPath: "resources/js/admin/assets"
     }
